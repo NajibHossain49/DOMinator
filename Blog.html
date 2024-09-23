@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+    <!-- Sticky Navbar -->
+    <header class="sticky top-0 bg-[#F9F7F3] z-50">
+        <nav class="flex justify-between items-center p-4">
+            <button id="homeButton" class="bg-[#B4F461] text-black font-semibold px-4 py-2 rounded-lg mr-4">Home</button>
+
+            <div class="hidden sm:flex items-center">
+                <img src="assets/logo.png" alt="Icon" class="w-6 h-6 mr-2">
+                <h1 class="text-black text-xl">Donate Bangladesh</h1>
+            </div>
+
+            <div class="flex items-center ml-4">
+                <img src="assets/coin.png" alt="Icon" class="w-6 h-6 mr-2">
+                <span class="text-gray-600 text-lg font-semibold">5500 BDT</span>
+            </div>
+        </nav>
+
+
+    </header>
+
+
+    <div class="py-24">
+        <div class="text-center mb-6">
+            <h1 class="font-bold text-3xl">Important FAQ ⁉</h1>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl text-center font-extrabold">What is the Document Object Model (DOM) ?
+            </div>
+            <div class="collapse-content">
+                <p class="text-center font-semibold">The Document Object Model (DOM) is a tree-like structure that
+                    represents a webpage, allowing
+                    JavaScript to access and manipulate its elements and content dynamically.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-extrabold text-center">How do you select an element from the DOM ?
+            </div>
+            <div class="collapse-content">
+                <p class="text-center font-semibold">We can select an element from the DOM using methods like
+                    "document.getElementById('id')", "document.querySelector('.class')", or
+                    "document.getElementsByClassName('class')".</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-extrabold text-center">what is event delegation in the context of
+                the DOM, and why it is useful ?</div>
+            <div class="collapse-content">
+                <p class="text-center font-semibold">Event delegation is when we add one event listener to a parent
+                    element to handle events from its child elements, making it easier and faster to manage those
+                    events.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-extrabold text-center">How do you manipulate an element's attributes
+                and styles using the DOM ?</div>
+            <div class="collapse-content">
+                <p class="text-center font-semibold">We can manipulate an element's attributes using
+                    "element.setAttribute('attr', 'value')" and change
+                    its style with "element.style.property = 'value' " in the DOM.</p>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript Link -->
+    <script src="scripts/index.js"></script>
+    <!-- \end{code} -->
+
+    <script>
+        document.getElementById('homeButton').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+
+</html>
